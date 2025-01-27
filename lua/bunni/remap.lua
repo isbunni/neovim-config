@@ -40,3 +40,6 @@ vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
 
 -- Undo
 vim.keymap.set('n', '<leader>=', vim.cmd.UndotreeToggle)
+
+--Mason
+vim.keymap.set("n", "<leader>M", vim.cmd.Mason)
