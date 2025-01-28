@@ -1,4 +1,4 @@
-return{
+return {
   {
     'nvimdev/dashboard-nvim',
     event = 'VimEnter',
@@ -48,12 +48,11 @@ return{
               action = 'Telescope find_files'
             },
           },
-          footer = {}  --your footer
+          footer = {} --your footer
         }
       }
       -- config
     end,
-    dependencies = { {'nvim-tree/nvim-web-devicons'}}
+    dependencies = { { 'nvim-tree/nvim-web-devicons' } }
   },
 }
-

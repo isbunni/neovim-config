@@ -10,8 +10,8 @@ print("Welcome back, Bunni ૮₍˶ᵔ ᵕ ᵔ˶ ₎ა♡")
 --relative line numbers
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.opt.wrap = false -- Don't wrap lines
-vim.opt.linebreak = true     -- Break lines at word boundaries
+vim.opt.wrap = false      -- Don't wrap lines
+vim.opt.linebreak = true  -- Break lines at word boundaries
 
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
@@ -56,5 +56,5 @@ vim.opt.softtabstop = 2    -- Number of spaces that a <Tab> counts for while
 --                            performing editing operations
 vim.opt.smartindent = true -- Insert indents automatically
 
-vim.opt.textwidth = 80       -- Set text width to 80 characters
-vim.opt.colorcolumn = "80"   -- Highlight column 80
+vim.opt.textwidth = 80     -- Set text width to 80 characters
+vim.opt.colorcolumn = "80" -- Highlight column 80

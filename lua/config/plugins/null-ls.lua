@@ -1,7 +1,7 @@
-return{
+return {
   {
     "nvimtools/none-ls.nvim",
-    config = function ()
+    config = function()
       require("null-ls").setup({
         debug = true,
 
@@ -28,5 +28,3 @@ return{
     end,
   }
 }
-
-

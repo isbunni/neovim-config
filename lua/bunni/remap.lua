@@ -15,7 +15,7 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<C-f>', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fs', function()
-	builtin.grep_string({ search = vim.fn.input("Grep > ") });
+  builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
 --harpoon
 local harpoon = require("harpoon")
@@ -41,5 +41,8 @@ vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
 -- Undo
 vim.keymap.set('n', '<leader>=', vim.cmd.UndotreeToggle)
 
---Mason
+-- Mason
 vim.keymap.set("n", "<leader>M", vim.cmd.Mason)
+
+-- Null-ls
+vim.keymap.set("n", "<leader>F", vim.lsp.buf.format)
