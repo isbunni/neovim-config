@@ -2,14 +2,10 @@ return {
   {
     "nvimtools/none-ls.nvim",
     config = function()
-      require("null-ls").setup({
-        debug = true,
-
-      })
-
       local null_ls = require("null-ls")
 
       null_ls.setup({
+        debug = true,
         sources = {
           -- Formatting
           null_ls.builtins.formatting.stylua.with({
@@ -18,8 +14,11 @@ return {
           null_ls.builtins.formatting.clang_format.with({
             filetypes = { "cpp", "c" },
           }),
-          null_ls.builtins.formatting.prettier.with({
-            filetypes = { "html", "json", "yaml", "markdown" },
+          null_ls.builtins.formatting.prettierd.with({
+            filetypes = { "javascript", "javascriptreact", "typescript",
+              "typescriptreact", "vue", "css", "scss", "less", "html", "json",
+              "jsonc", "yaml", "markdown", "markdown.mdx", "graphql",
+              "handlebars", "svelte", "astro", "htmlangular" },
           }),
           -- Completion
           null_ls.builtins.completion.spell,
