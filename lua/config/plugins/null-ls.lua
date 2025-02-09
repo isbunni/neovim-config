@@ -14,7 +14,7 @@ return {
           null_ls.builtins.formatting.clang_format.with({
             filetypes = { "cpp", "c" },
           }),
-          null_ls.builtins.formatting.prettierd.with({
+          null_ls.builtins.formatting.prettier.with({
             filetypes = { "javascript", "javascriptreact", "typescript",
               "typescriptreact", "vue", "css", "scss", "less", "html", "json",
               "jsonc", "yaml", "markdown", "markdown.mdx", "graphql",
