@@ -13,8 +13,7 @@ vim.wo.relativenumber = true
 vim.opt.wrap = false      -- Don't wrap lines
 vim.opt.linebreak = true  -- Break lines at word boundaries
 
-vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd("colorscheme onedark")
 
 --[[require('kanagawa').setup({
     compile = false,             -- enable compiling the colorscheme
