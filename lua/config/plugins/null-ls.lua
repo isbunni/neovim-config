@@ -15,15 +15,33 @@ return {
             filetypes = { "cpp", "c" },
           }),
           null_ls.builtins.formatting.prettier.with({
-            filetypes = { "javascript", "javascriptreact", "typescript",
-              "typescriptreact", "vue", "css", "scss", "less", "html", "json",
-              "jsonc", "yaml", "markdown", "markdown.mdx", "graphql",
-              "handlebars", "svelte", "astro", "htmlangular" },
+            filetypes = {
+              "javascript",
+              "javascriptreact",
+              "typescript",
+              "typescriptreact",
+              "vue",
+              "css",
+              "scss",
+              "less",
+              "html",
+              "json",
+              "jsonc",
+              "yaml",
+              "markdown",
+              "markdown.mdx",
+              "graphql",
+              "handlebars",
+              "svelte",
+              "astro",
+              "htmlangular",
+            },
           }),
+          null_ls.builtins.formatting.asmfmt,
           -- Completion
           null_ls.builtins.completion.spell,
         },
       })
     end,
-  }
+  },
 }
