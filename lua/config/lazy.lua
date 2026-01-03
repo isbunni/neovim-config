@@ -29,7 +29,7 @@ require("lazy").setup({
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "tokyo-night" } },
+  install = { colorscheme = { "kangawa" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
@@ -87,19 +87,4 @@ require('gitsigns').setup {
     row = 0,
     col = 1
   },
-}
-
-
-
-
--- nvim-treesitter configs
-return {
-
-  require'nvim-treesitter.configs'.setup {
-    ensure_installed = { "cpp" },
-    highlight = {
-      enable = true,
-      additional_vim_regex_highlighting = true,
-    },
-  }
 }
